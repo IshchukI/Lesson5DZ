@@ -15,16 +15,15 @@ def is_two_squared(n):
     if (n / 2) >= 2:
         return is_two_squared(n / 2)
     else:
-        if type(n) == int:
-            return "No"
+        if float(n).is_integer() and n == 2:
+            return f"Yes"
         else:
-            if n.is_integer() and n == 2:
-                return f"Yes"
-            else:
-                return "No"
+            return "No"
 
 
 random_list_generation(LIST_SIZE, RANDOM_UPPER_BOUND)
-
 for el in data_list:
     print(f"Число {el} является степенью двойки: {is_two_squared(el)}")
+
+
+
