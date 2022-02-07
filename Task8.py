@@ -1,6 +1,6 @@
 import random
 
-RANDOM_UPPER_BOUND = 100
+RANDOM_UPPER_BOUND = 10
 LIST_SIZE = 10
 
 data_list = list()
@@ -15,7 +15,7 @@ def is_two_squared(n):
     if (n / 2) >= 2:
         return is_two_squared(n / 2)
     else:
-        if float(n).is_integer() and n == 2:
+        if n == 2:
             return f"Yes"
         else:
             return "No"
