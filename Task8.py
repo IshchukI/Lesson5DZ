@@ -1,6 +1,6 @@
 import random
 
-RANDOM_UPPER_BOUND = 10
+RANDOM_UPPER_BOUND = 100
 LIST_SIZE = 10
 
 data_list = list()
